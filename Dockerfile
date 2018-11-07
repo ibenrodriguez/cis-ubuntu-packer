@@ -9,7 +9,7 @@ RUN /bin/bash scripts/build.sh
 
 FROM alpine/git
 WORKDIR /app
-RUN git clone https://github.com/gordon-scalesec/cis-ubuntu-packer.git
+RUN git clone https://github.com/gjyoung1974/cis-ubuntu-packer.git
 
 COPY ./account.json /root/.gcloud/account.json
 COPY ./ /app
