@@ -11,7 +11,6 @@ FROM alpine/git
 WORKDIR /app
 RUN git clone https://github.com/gjyoung1974/cis-ubuntu-packer.git
 
-COPY ./account.json /root/.gcloud/account.json
 COPY ./ /app
 COPY --from=0 /bin/ /bin/
 RUN ["/bin/packer", "build", "./packer.json"]
