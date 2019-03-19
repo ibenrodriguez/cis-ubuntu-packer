@@ -3,12 +3,12 @@
     {
       "type": "googlecompute",
       "account_file": "{{user `gcloud_account_json`}}",
-      "project_id": "acme-dev",
+      "project_id": "gke-packer-demo",
       "ssh_username": "ubuntu",
-      "source_image": "ubuntu-1804-bionic-v20180723",
-      "zone": "us-west2-a",
-      "image_name": "acme-ubuntu-1804-bionic-base-{{timestamp}}",
-      "image_description":"acme-hardened-ubuntu-1804-bionic-base{{timestamp}}",
+      "source_image": "ubuntu-1604-xenial-v20190306",
+      "zone": "europe-west2-c",
+      "image_name": "cis-ubuntu-1604-bionic-base-{{timestamp}}",
+      "image_description":"cis-hardened-ubuntu-1604-bionic-base{{timestamp}}",
       "machine_type": "f1-micro"
     }
 ],

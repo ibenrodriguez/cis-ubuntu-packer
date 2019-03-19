@@ -77,7 +77,7 @@
       - section5.3
       - section5.3.6
 
-# TODO: fix this is not working, presently setting from setup-scripts/01-vgs-customizations.sh as a workaround
+# TODO: fix this is not working, presently setting from setup-scripts/01-customizations.sh as a workaround
 #  - name: 5.3.7 Use Only Approved Cipher in Counter Mode
 #    lineinfile: >
 #        dest='/etc/ssh/sshd_config'

@@ -1,17 +1,25 @@
 # cis-ubuntu-packer
-CIS Hardened Ubuntu Docker Image
+### What's this? 
+####  This project packs a "Center for Internet Security" benchmark hardened Ubuntu image for Google Compute Engine
+`CIS Hardened Ubuntu Image`
 
-### Authenticate / get a JWT token for Gcloud
-`gcloud auth application-default login`
+How to create the hardened image:
 
-### Pack a CIS hardened Ubuntu Image
-`packer build ./packer.json`
+1. Clone this repo to local system with gcloud sdk installed. See: https://cloud.google.com/sdk/install
+1. Have packer in the system path. See: https://www.packer.io/intro/getting-started/install.html
+1. Edit the file: packer.json 
+change the line `project_id` to reflect the proper GCloud project     
+1. Authenticate / get a JWT token for Gcloud
+```sh
+gcloud auth application-default login
+```
+1. Pack a CIS hardened Ubuntu Image
+```sh
+packer build ./packer.json
+```
 
 ---
 2019 Gordon Young - gjyoung1974@gmail.com
-
-### Prerequisite verification steps
-
 
 ### Usage Example
 
